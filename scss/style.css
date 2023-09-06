@@ -765,6 +765,9 @@ html body #wrapper #container section .content-container .tab-content #aboutme .
   border-radius: 5px;
   padding: 8px;
 }
+html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-panel .timeline-body p {
+  padding-bottom: 5px;
+}
 html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li:nth-child(even) .timeline-panel {
   left: 100%;
   width: 100%;
