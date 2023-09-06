@@ -1,0 +1,46 @@
+
+
+@mixin mobile {
+    @media(max-width:757px){
+        @content;
+    }
+};
+
+@mixin mobile-textSize {
+    @media(max-width:280px){
+        font-size: 12px;
+        line-height: unset;
+    }
+};
+
+@mixin tablet {
+    @media(min-width:758px) and (max-width:1023px){
+        @content;
+    }
+};
+@mixin desktop {
+    @media(min-width:1024px){
+        @content;
+    }
+};
+
+
+
+@mixin titleSize {
+    @media(max-width:600px){
+        @content;
+    }
+}
+
+@mixin tabWidth {
+    @media(max-width:1240px){
+        @content;
+    }
+};
+
+
+@mixin contentPadding {
+    @media(min-width:758px) and (max-width:1240px){
+        @content;
+    }
+}
