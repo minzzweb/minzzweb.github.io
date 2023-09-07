@@ -488,6 +488,8 @@ html body #wrapper #container section .content-container .tab-content #project .
 }
 @media (max-width: 757px) {
   html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content {
+    display: flex;
+    flex-direction: column;
     z-index: 1001;
     display: none;
     width: 80%;
@@ -593,26 +595,21 @@ html body #wrapper #container section .content-container .tab-content #project .
   }
 }
 html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn {
-  position: absolute;
-  bottom: 30px;
-  left: 150px;
   font-size: 18px;
+  padding-top: 10px;
 }
 @media (max-width: 757px) {
   html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn {
     font-size: 13px;
-    left: 50%;
-    margin-left: -35px;
   }
 }
 html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn a {
   display: inline-block;
-  width: 60px;
+  padding: 0px 20px;
   line-height: 30px;
   font-weight: 600;
   text-align: center;
   border: 1px solid #000;
-  transition: all 0.5s ease-in-out;
 }
 html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn a:hover {
   background-color: #6930c3;
@@ -620,8 +617,8 @@ html body #wrapper #container section .content-container .tab-content #project .
 }
 @media (max-width: 757px) {
   html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn a {
-    width: 40px;
     line-height: 24px;
+    padding: 0px 5px;
   }
 }
 html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .mobile_btn {
