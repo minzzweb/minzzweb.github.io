@@ -106,6 +106,7 @@ html body #wrapper #container .check-point .prf-content div p {
 }
 html body #wrapper #container header {
   position: relative;
+  height: 400px;
   background-color: #6930c3;
 }
 html body #wrapper #container header .header-bar {
@@ -272,7 +273,6 @@ html body #wrapper #container header .skils-box .skils-box-close {
   text-shadow: 0px 3px 2px rgb(150, 150, 150);
 }
 html body #wrapper #container section .content-container {
-  position: relative;
   border-top: 2px solid rgba(0, 0, 0, 0.47);
 }
 html body #wrapper #container section .content-container .tab-menu ul {

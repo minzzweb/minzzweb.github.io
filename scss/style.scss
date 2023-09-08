@@ -116,8 +116,8 @@ html {
 
         header {
           position: relative;
+          height: 400px;
           background-color: $main-color1;
-
           .header-bar {
             position: absolute;
             width: 100%;
@@ -295,7 +295,6 @@ html {
 
         section {
           .content-container {
-            position: relative;
             border-top: 2px solid rgba(0, 0, 0, 0.47);
             .tab-menu {
               ul {
