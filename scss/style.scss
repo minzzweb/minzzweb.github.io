@@ -178,33 +178,12 @@ html {
               font-size: 3rem;
               padding-bottom: 20px;
               font-family: "Cherry Bomb One", cursive;
+              opacity: 0;
             }
             span {
               font-size: 1.5rem;
               font-weight: bold;
-            }
-            h1,
-            span {
               opacity: 0;
-              animation: showHeaderContent 8s linear 1 forwards;
-            }
-          }
-
-          @keyframes showHeaderContent {
-            from {
-              opacity: 0;
-            }
-            0% {
-              opacity: 0;
-            }
-            70% {
-              opacity: 0;
-            }
-            100% {
-              opacity: 1;
-            }
-            to {
-              opacity: 1;
             }
           }
 

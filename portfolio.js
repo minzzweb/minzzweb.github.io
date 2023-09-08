@@ -63,7 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //--------------------------------------------------------------------
   //배경사진
-  const element = document.querySelector(".header-content");
+  const headerContent = document.querySelector(".header-content");
+  const headerContentH1 = document.querySelector(".header-content h1");
+  const headerContentSpan = document.querySelector(".header-content span");
   let animationIndex = 0;
 
   function animateBackground() {
@@ -83,8 +85,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const animationFn = setInterval(function () {
       if (animationIndex < backgrounds.length - 1) {
         animationIndex++;
-        element.style.backgroundImage = backgrounds[animationIndex];
-        element.style.backgroundSize = "cover";
+        headerContent.style.backgroundImage = backgrounds[animationIndex];
+        headerContent.style.backgroundSize = "cover";
+        if (animationIndex == backgrounds.length - 1) {
+          headerContentH1.style.opacity = 1;
+          headerContentSpan.style.opacity = 1;
+        }
       } else {
         return false;
       }
