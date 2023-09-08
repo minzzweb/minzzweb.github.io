@@ -89,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
       bgEl.style.backgroundImage = backgrounds[i];
       bgEl.style.backgroundRepeat = "no-repeat";
       bgEl.style.backgroundSize = "cover";
-      bgEl.style.display = "none";
+      bgEl.style.opacity = 0;
+      bgEl.style.transition = "opacity 1s ease";
       headerContentBg.append(bgEl);
     }
   }
@@ -102,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (animationIndex < backgrounds.length) {
         const bgElememts = document.querySelector(".bg-" + animationIndex);
         console.log(bgElememts);
-        bgElememts.style.display = "block";
+        bgElememts.style.opacity = 1;
         animationIndex++;
 
         if (animationIndex == backgrounds.length) {
@@ -116,6 +117,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.addEventListener("load", animateBackgroundFn());
+
+  //--------------------------------------------------------------------
+
   //best 효과 함수문
   const bestSkils = document.querySelectorAll(".best");
 
