@@ -61,6 +61,34 @@ document.addEventListener("DOMContentLoaded", function () {
     bestSkils.forEach((v) => v.classList.remove("opc1"));
   });
 
+  //--------------------------------------------------------------------
+  //배경사진
+  const element = document.querySelector(".header-content");
+  let animationIndex = 0;
+
+  function animateBackground() {
+    const backgrounds = [
+      "url(../image/header/bg.png)",
+      "url(../image/header/bg1.png)",
+      "url(../image/header/bg2.png)",
+      "url(../image/header/bg3.png)",
+      "url(../image/header/bg4.png)",
+      "url(../image/header/bg5.png)",
+      "url(../image/header/bg6.png)",
+      "url(../image/header/bg7.png)",
+      "url(../image/header/bg8.png)",
+      "url(../image/header/bg9.png)",
+    ];
+
+    element.style.backgroundImage = backgrounds[animationIndex]; //1,2,3,4,5....
+    element.style.backgroundSize = "cover";
+
+    animationIndex = (animationIndex + 1) % backgrounds.length;
+
+    setTimeout(animateBackground, 100);
+  }
+  window.addEventListener("load", animateBackground);
+
   //best 효과 함수문
   const bestSkils = document.querySelectorAll(".best");
 

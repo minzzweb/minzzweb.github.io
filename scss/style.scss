@@ -168,7 +168,7 @@ html {
             background-image: url(../image/header/bg.png);
             background-size: cover;
             background-repeat: no-repeat;
-            animation: mybg 8s linear 1 forwards;
+
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -190,84 +190,16 @@ html {
               animation: showHeaderContent 8s linear 1 forwards;
             }
           }
-          @keyframes mybg {
-            /* 진행률 0%,~부터 */
-            from {
-              background-image: url(../image/header/bg.png);
-              background-size: cover;
-            }
-            2% {
-              background-image: url(../image/header/bg1.png);
-              background-size: cover;
-            }
-            5% {
-              background-image: url(../image/header/bg2.png);
-              background-size: cover;
-            }
-            8% {
-              background-image: url(../image/header/bg3.png);
-              background-size: cover;
-            }
-            12% {
-              background-image: url(../image/header/bg4.png);
-              background-size: cover;
-            }
-            15% {
-              background-image: url(../image/header/bg5.png);
-              background-size: cover;
-            }
-            18% {
-              background-image: url(../image/header/bg6.png);
-              background-size: cover;
-            }
-            22% {
-              background-image: url(../image/header/bg7.png);
-              background-size: cover;
-            }
-            25% {
-              background-image: url(../image/header/bg8.png);
-              background-size: cover;
-            }
-            28% {
-              background-image: url(../image/header/bg9.png);
-              background-size: cover;
-            }
 
-            to {
-              background-size: cover;
-              background-image: url(../image/header/bg9.png);
-            }
-          }
           @keyframes showHeaderContent {
             from {
               opacity: 0;
             }
-            2% {
+            0% {
               opacity: 0;
             }
-            5% {
+            70% {
               opacity: 0;
-            }
-            8% {
-              opacity: 0;
-            }
-            12% {
-              opacity: 0;
-            }
-            15% {
-              opacity: 0;
-            }
-            18% {
-              opacity: 0;
-            }
-            22% {
-              opacity: 0;
-            }
-            25% {
-              opacity: 0;
-            }
-            28% {
-              opacity: 1;
             }
             100% {
               opacity: 1;
