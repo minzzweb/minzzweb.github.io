@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap");
 html body {
@@ -137,7 +136,15 @@ html body #wrapper #container header .header-bar .wrapper-bgColor #bgColor-btn {
   border: none;
   cursor: pointer;
 }
-html body #wrapper #container header .header-bar .wrapper-bgColor #bgColor-btn .fa-bone {
+html
+  body
+  #wrapper
+  #container
+  header
+  .header-bar
+  .wrapper-bgColor
+  #bgColor-btn
+  .fa-bone {
   font-size: 35px;
   color: #c7f7c7;
 }
@@ -154,10 +161,8 @@ html body #wrapper #container header .header-content {
   width: 100%;
   height: 400px;
   background-color: inherit;
-  background-image: url(../image/header/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  animation: mybg 8s linear 1 forwards;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,83 +183,15 @@ html body #wrapper #container header .header-content span {
   opacity: 0;
   animation: showHeaderContent 8s linear 1 forwards;
 }
-@keyframes mybg {
-  /* 진행률 0%,~부터 */
-  from {
-    background-image: url(../image/header/bg.png);
-    background-size: cover;
-  }
-  2% {
-    background-image: url(../image/header/bg1.png);
-    background-size: cover;
-  }
-  5% {
-    background-image: url(../image/header/bg2.png);
-    background-size: cover;
-  }
-  8% {
-    background-image: url(../image/header/bg3.png);
-    background-size: cover;
-  }
-  12% {
-    background-image: url(../image/header/bg4.png);
-    background-size: cover;
-  }
-  15% {
-    background-image: url(../image/header/bg5.png);
-    background-size: cover;
-  }
-  18% {
-    background-image: url(../image/header/bg6.png);
-    background-size: cover;
-  }
-  22% {
-    background-image: url(../image/header/bg7.png);
-    background-size: cover;
-  }
-  25% {
-    background-image: url(../image/header/bg8.png);
-    background-size: cover;
-  }
-  28% {
-    background-image: url(../image/header/bg9.png);
-    background-size: cover;
-  }
-  to {
-    background-size: cover;
-    background-image: url(../image/header/bg9.png);
-  }
-}
 @keyframes showHeaderContent {
   from {
     opacity: 0;
   }
-  2% {
+  0% {
     opacity: 0;
   }
-  5% {
+  70% {
     opacity: 0;
-  }
-  8% {
-    opacity: 0;
-  }
-  12% {
-    opacity: 0;
-  }
-  15% {
-    opacity: 0;
-  }
-  18% {
-    opacity: 0;
-  }
-  22% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  28% {
-    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -294,12 +231,29 @@ html body #wrapper #container header .skils-box {
   -webkit-box-shadow: -5px -1px 15px 1px rgba(0, 0, 0, 0.4);
   border-radius: 20px 0px 0px 20px;
 }
-html body #wrapper #container header .skils-box .skils-content .skils-publisher h2 {
+html
+  body
+  #wrapper
+  #container
+  header
+  .skils-box
+  .skils-content
+  .skils-publisher
+  h2 {
   padding-bottom: 20px;
   font-style: italic;
   font-weight: 700;
 }
-html body #wrapper #container header .skils-box .skils-content .skils-publisher h2 .tit-1::after {
+html
+  body
+  #wrapper
+  #container
+  header
+  .skils-box
+  .skils-content
+  .skils-publisher
+  h2
+  .tit-1::after {
   display: inline-block;
   margin: 0px 5px;
   width: 25px;
@@ -307,20 +261,57 @@ html body #wrapper #container header .skils-box .skils-content .skils-publisher 
   content: "";
   background-color: #000;
 }
-html body #wrapper #container header .skils-box .skils-content .skils-publisher .skils-list {
+html
+  body
+  #wrapper
+  #container
+  header
+  .skils-box
+  .skils-content
+  .skils-publisher
+  .skils-list {
   display: flex;
   padding-bottom: 15px;
   width: 250px;
 }
-html body #wrapper #container header .skils-box .skils-content .skils-publisher .skils-list li {
+html
+  body
+  #wrapper
+  #container
+  header
+  .skils-box
+  .skils-content
+  .skils-publisher
+  .skils-list
+  li {
   position: relative;
   width: 41.6666666667px;
   text-align: center;
 }
-html body #wrapper #container header .skils-box .skils-content .skils-publisher .skils-list li .fab {
+html
+  body
+  #wrapper
+  #container
+  header
+  .skils-box
+  .skils-content
+  .skils-publisher
+  .skils-list
+  li
+  .fab {
   font-size: 22px;
 }
-html body #wrapper #container header .skils-box .skils-content .skils-publisher .skils-list li .best {
+html
+  body
+  #wrapper
+  #container
+  header
+  .skils-box
+  .skils-content
+  .skils-publisher
+  .skils-list
+  li
+  .best {
   position: absolute;
   top: -5px;
   left: 4px;
@@ -331,18 +322,44 @@ html body #wrapper #container header .skils-box .skils-content .skils-publisher 
   background-image: url(../image/positive-vote.png);
   opacity: 0.2;
 }
-html body #wrapper #container header .skils-box .skils-content .skils-publisher .skils-list li .opc1 {
+html
+  body
+  #wrapper
+  #container
+  header
+  .skils-box
+  .skils-content
+  .skils-publisher
+  .skils-list
+  li
+  .opc1 {
   opacity: 0.8;
 }
 html body #wrapper #container header .skils-box .skils-content .skils-backend {
   font-weight: 700;
 }
-html body #wrapper #container header .skils-box .skils-content .skils-backend h2 {
+html
+  body
+  #wrapper
+  #container
+  header
+  .skils-box
+  .skils-content
+  .skils-backend
+  h2 {
   padding-bottom: 20px;
   font-style: italic;
   font-weight: inherit;
 }
-html body #wrapper #container header .skils-box .skils-content .skils-backend p {
+html
+  body
+  #wrapper
+  #container
+  header
+  .skils-box
+  .skils-content
+  .skils-backend
+  p {
   font-weight: inherit;
 }
 html body #wrapper #container header .skils-box .skils-box-close {
@@ -375,10 +392,28 @@ html body #wrapper #container section .content-container .tab-menu ul li a {
   font-weight: 600;
   opacity: 0.3;
 }
-html body #wrapper #container section .content-container .tab-menu ul li a:hover {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-menu
+  ul
+  li
+  a:hover {
   opacity: 1;
 }
-html body #wrapper #container section .content-container .tab-menu ul li .active {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-menu
+  ul
+  li
+  .active {
   opacity: 1;
 }
 html body #wrapper #container section .content-container .tab-content > div {
@@ -391,7 +426,17 @@ html body #wrapper #container section .content-container .tab-content > div {
     width: 100%;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-title {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-title {
   display: flex;
   justify-content: space-between;
   font-size: 35px;
@@ -399,28 +444,93 @@ html body #wrapper #container section .content-container .tab-content #project .
   border-bottom: 4px solid #252525;
   cursor: pointer;
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-title:hover h2 {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-title:hover
+  h2 {
   background-color: red;
 }
 @media (max-width: 600px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-title {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-title {
     font-size: 15px;
     padding: 10px 5px;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-title:hover .project-btn {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-title:hover
+  .project-btn {
   transform: rotate(45deg);
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-title h2 .text {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-title
+  h2
+  .text {
   font-weight: 700;
   opacity: 0.8;
   padding-left: 10px;
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-title .project-btn {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-title
+  .project-btn {
   cursor: pointer;
   transition: all 0.2s ease-in;
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box {
   position: relative;
   display: none;
   width: 100%;
@@ -429,28 +539,81 @@ html body #wrapper #container section .content-container .tab-content #project .
   box-sizing: border-box;
   overflow: hidden;
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box::after {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box::after {
   display: block;
   content: "";
   clear: both;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box {
     padding-left: 0px;
     height: 360px;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box > div {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  > div {
   float: left;
   height: 100%;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box > div {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    > div {
     float: unset;
     position: absolute;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-image {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -458,7 +621,18 @@ html body #wrapper #container section .content-container .tab-content #project .
   height: 450px;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-image {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-image {
     width: 240px;
     top: 50%;
     left: 50%;
@@ -467,13 +641,36 @@ html body #wrapper #container section .content-container .tab-content #project .
     cursor: pointer;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-image img {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-image
+  img {
   display: inline-block;
   width: 100%;
   -webkit-box-shadow: 0px 8px 12px -3px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 8px 12px -3px rgba(0, 0, 0, 0.7);
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content {
   position: relative;
   width: 70%;
   padding: 70px 0px 30px 150px;
@@ -482,12 +679,34 @@ html body #wrapper #container section .content-container .tab-content #project .
   opacity: 0.8;
 }
 @media (min-width: 758px) and (max-width: 1240px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content {
     padding: 70px 0px 30px 100px;
   }
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content {
     display: flex;
     flex-direction: column;
     z-index: 1001;
@@ -508,76 +727,269 @@ html body #wrapper #container section .content-container .tab-content #project .
     box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.56);
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-name {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .project-name {
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 30px;
 }
 @media (max-width: 600px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-name {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .project-name {
     font-size: 20px;
   }
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-name {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .project-name {
     font-size: 17px;
     padding-bottom: 10px;
   }
 }
 @media (max-width: 280px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-name {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .project-name {
     font-size: 12px;
     line-height: unset;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .project-explain {
   font-size: 19px;
   font-weight: 600;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .project-explain {
     font-size: 14px;
   }
 }
 @media (max-width: 280px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .project-explain {
     font-size: 12px;
     line-height: unset;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain p {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .project-explain
+  p {
   line-height: 30px;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain p {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .project-explain
+    p {
     line-height: 16px;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain p span {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .project-explain
+  p
+  span {
   color: #6930c3;
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain ul {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .project-explain
+  ul {
   padding-top: 10px;
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain ul li {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .project-explain
+  ul
+  li {
   position: relative;
   font-size: 17px;
   line-height: 20px;
   padding-left: 30px;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain ul li {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .project-explain
+    ul
+    li {
     font-size: 15px;
     padding-left: 15px;
   }
 }
 @media (max-width: 280px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain ul li {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .project-explain
+    ul
+    li {
     font-size: 12px;
     line-height: unset;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain ul li::after {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .project-explain
+  ul
+  li::after {
   position: absolute;
   left: 0px;
   top: 50%;
@@ -590,20 +1002,71 @@ html body #wrapper #container section .content-container .tab-content #project .
   display: block;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .project-explain ul li::after {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .project-explain
+    ul
+    li::after {
     display: none;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .view-btn {
   font-size: 18px;
   padding-top: 10px;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .view-btn {
     font-size: 13px;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn a {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .view-btn
+  a {
   display: inline-block;
   padding: 0px 20px;
   line-height: 30px;
@@ -611,21 +1074,71 @@ html body #wrapper #container section .content-container .tab-content #project .
   text-align: center;
   border: 1px solid #000;
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn a:hover {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .view-btn
+  a:hover {
   background-color: #6930c3;
   color: #fff;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .view-btn a {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .view-btn
+    a {
     line-height: 24px;
     padding: 0px 5px;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .mobile_btn {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .project-content
+  .mobile_btn {
   display: none;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .project-content .mobile_btn {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #project
+    .project-list
+    li
+    .project-box
+    .project-content
+    .mobile_btn {
     display: block;
     position: absolute;
     top: 15px;
@@ -635,66 +1148,204 @@ html body #wrapper #container section .content-container .tab-content #project .
     cursor: pointer;
   }
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .project-box .active-m {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .project-box
+  .active-m {
   display: block;
 }
-html body #wrapper #container section .content-container .tab-content #project .project-list li .active {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #project
+  .project-list
+  li
+  .active {
   display: block;
 }
 html body #wrapper #container section .content-container .tab-content #aboutme {
   background-color: #6930c3;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section {
   padding: 20px 50px;
   box-sizing: border-box;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-title-box {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-title-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 30px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-title-box .aboutme-title {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-title-box
+  .aboutme-title {
   font-size: 2.7rem;
   font-weight: 900;
   color: #212529;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-skils-box {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-skils-box {
   padding: 10px 0px;
   width: 80%;
   margin-bottom: 50px;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-skils-box {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #aboutme
+    .page-section
+    .container
+    .aboutme-skils-box {
     width: 100%;
   }
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-skils-box .aboutme-skils-title {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-skils-box
+  .aboutme-skils-title {
   font-weight: 600;
   font-size: 1.4rem;
   color: #80ffdb;
   padding-bottom: 10px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-skils-box .aboutme-skils-content {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-skils-box
+  .aboutme-skils-content {
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 600px) {
-  html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-skils-box .aboutme-skils-content {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #aboutme
+    .page-section
+    .container
+    .aboutme-skils-box
+    .aboutme-skils-content {
     flex-direction: column;
   }
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-skils-box .aboutme-skils-content li h3 {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-skils-box
+  .aboutme-skils-content
+  li
+  h3 {
   position: relative;
   font-weight: 600;
   padding-bottom: 10px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-skils-box .aboutme-skils-content li h3::after {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-skils-box
+  .aboutme-skils-content
+  li
+  h3::after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -704,33 +1355,130 @@ html body #wrapper #container section .content-container .tab-content #aboutme .
   background-color: black;
   display: block;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-skils-box .aboutme-skils-content li ul {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-skils-box
+  .aboutme-skils-content
+  li
+  ul {
   padding-top: 10px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-skils-box .aboutme-skils-content li ul li {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-skils-box
+  .aboutme-skils-content
+  li
+  ul
+  li {
   padding-bottom: 5px;
   color: #fff;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li {
   display: flex;
   justify-content: center;
   padding: 20px 0px;
   position: relative;
   width: 270px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li:last-child .timeline-image::after {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li:last-child
+  .timeline-image::after {
   display: none;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-image {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li
+  .timeline-image {
   padding: 0px 20px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-image img {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li
+  .timeline-image
+  img {
   width: 120px;
   height: 120px;
   border: 5px solid #80ffdb;
   border-radius: 50%;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-image::after {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li
+  .timeline-image::after {
   content: "";
   position: absolute;
   bottom: -30%;
@@ -740,82 +1488,299 @@ html body #wrapper #container section .content-container .tab-content #aboutme .
   height: 50px;
   background-color: #80ffdb;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-panel {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li
+  .timeline-panel {
   position: absolute;
   left: -100%;
   top: 0px;
   width: 100%;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-panel .timeline-heading .date {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li
+  .timeline-panel
+  .timeline-heading
+  .date {
   font-size: 1.3rem;
   font-weight: 600;
   color: #252525;
   padding-bottom: 7px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-panel .timeline-heading .subheading {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li
+  .timeline-panel
+  .timeline-heading
+  .subheading {
   color: #252525;
   padding-bottom: 10px;
   color: #fff;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-panel .timeline-body {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li
+  .timeline-panel
+  .timeline-body {
   background-color: #fff;
   border-radius: 5px;
   padding: 8px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-panel .timeline-body p {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li
+  .timeline-panel
+  .timeline-body
+  p {
   padding-bottom: 5px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li:nth-child(even) .timeline-panel {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  li:nth-child(even)
+  .timeline-panel {
   left: 100%;
   width: 100%;
   top: 0px;
 }
-html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline .thanks {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #aboutme
+  .page-section
+  .container
+  .aboutme-content-box
+  .timeline-container
+  .timeline
+  .thanks {
   color: #fff;
   padding: 30px 0px;
 }
 @media (max-width: 757px) {
-  html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #aboutme
+    .page-section
+    .container
+    .aboutme-content-box
+    .timeline-container
+    .timeline
+    li {
     display: flex;
     justify-content: center;
     width: 270px;
   }
-  html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-image {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #aboutme
+    .page-section
+    .container
+    .aboutme-content-box
+    .timeline-container
+    .timeline
+    li
+    .timeline-image {
     display: none;
   }
-  html body #wrapper #container section .content-container .tab-content #aboutme .page-section .container .aboutme-content-box .timeline-container .timeline li .timeline-panel {
+  html
+    body
+    #wrapper
+    #container
+    section
+    .content-container
+    .tab-content
+    #aboutme
+    .page-section
+    .container
+    .aboutme-content-box
+    .timeline-container
+    .timeline
+    li
+    .timeline-panel {
     position: initial;
   }
 }
 html body #wrapper #container section .content-container .tab-content #contact {
   background-color: #6930c3;
 }
-html body #wrapper #container section .content-container .tab-content #contact .page-section {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #contact
+  .page-section {
   padding: 50px 0px;
 }
-html body #wrapper #container section .content-container .tab-content #contact .page-section .container {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #contact
+  .page-section
+  .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-html body #wrapper #container section .content-container .tab-content #contact .page-section .container img {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #contact
+  .page-section
+  .container
+  img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 5px solid #fff;
   margin-bottom: 20px;
 }
-html body #wrapper #container section .content-container .tab-content #contact .page-section .container .name {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #contact
+  .page-section
+  .container
+  .name {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
-html body #wrapper #container section .content-container .tab-content #contact .page-section .container .developer {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #contact
+  .page-section
+  .container
+  .developer {
   margin-bottom: 20px;
 }
-html body #wrapper #container section .content-container .tab-content #contact .page-section .container .blog-list ul li {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #contact
+  .page-section
+  .container
+  .blog-list
+  ul
+  li {
   margin-bottom: 20px;
 }
-html body #wrapper #container section .content-container .tab-content #contact .page-section .container .blog-list ul li a {
+html
+  body
+  #wrapper
+  #container
+  section
+  .content-container
+  .tab-content
+  #contact
+  .page-section
+  .container
+  .blog-list
+  ul
+  li
+  a {
   font-size: 26px;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

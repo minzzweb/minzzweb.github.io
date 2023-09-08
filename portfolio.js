@@ -80,14 +80,17 @@ document.addEventListener("DOMContentLoaded", function () {
       "url(../image/header/bg9.png)",
     ];
 
-    element.style.backgroundImage = backgrounds[animationIndex]; //1,2,3,4,5....
-    element.style.backgroundSize = "cover";
-
-    animationIndex = (animationIndex + 1) % backgrounds.length;
-
-    setTimeout(animateBackground, 100);
+    const animationFn = setInterval(function () {
+      if (animationIndex < backgrounds.length - 1) {
+        animationIndex++;
+        element.style.backgroundImage = backgrounds[animationIndex];
+        element.style.backgroundSize = "cover";
+      } else {
+        return false;
+      }
+    }, 200);
   }
-  window.addEventListener("load", animateBackground);
+  window.addEventListener("load", animateBackground());
 
   //best 효과 함수문
   const bestSkils = document.querySelectorAll(".best");
