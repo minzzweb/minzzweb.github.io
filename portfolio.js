@@ -81,10 +81,13 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   function animateBackground() {
-    for (i = 0; i < backgrounds.length - 1; i++) {
+    for (i = 0; i < backgrounds.length; i++) {
       const bgEl = document.createElement("div");
       bgEl.classList.add("bg-" + i);
+      bgEl.style.width = "100%";
+      bgEl.style.height = "100%";
       bgEl.style.backgroundImage = backgrounds[i];
+      bgEl.style.backgroundRepeat = "no-repeat";
       bgEl.style.backgroundSize = "cover";
       bgEl.style.display = "none";
       headerContentBg.append(bgEl);
@@ -96,13 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
   function animateBackgroundFn() {
     let animationIndex = 0;
     const loadFn = setInterval(function () {
-      if (animationIndex < backgrounds.length - 1) {
+      if (animationIndex < backgrounds.length) {
         const bgElememts = document.querySelector(".bg-" + animationIndex);
         console.log(bgElememts);
         bgElememts.style.display = "block";
         animationIndex++;
 
-        if (animationIndex == backgrounds.length - 1) {
+        if (animationIndex == backgrounds.length) {
           headerContentH1.style.display = "block";
           headerContentSpan.style.display = "block";
         }
