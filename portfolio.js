@@ -66,38 +66,53 @@ document.addEventListener("DOMContentLoaded", function () {
   const headerContent = document.querySelector(".header-content");
   const headerContentH1 = document.querySelector(".header-content h1");
   const headerContentSpan = document.querySelector(".header-content span");
-  let animationIndex = 0;
+  const headerContentBg = document.querySelector(".header-content-bg");
+  const backgrounds = [
+    "url(../image/header/bg.png)",
+    "url(../image/header/bg1.png)",
+    "url(../image/header/bg2.png)",
+    "url(../image/header/bg3.png)",
+    "url(../image/header/bg4.png)",
+    "url(../image/header/bg5.png)",
+    "url(../image/header/bg6.png)",
+    "url(../image/header/bg7.png)",
+    "url(../image/header/bg8.png)",
+    "url(../image/header/bg9.png)",
+  ];
 
   function animateBackground() {
-    const backgrounds = [
-      "url(../image/header/bg.png)",
-      "url(../image/header/bg1.png)",
-      "url(../image/header/bg2.png)",
-      "url(../image/header/bg3.png)",
-      "url(../image/header/bg4.png)",
-      "url(../image/header/bg5.png)",
-      "url(../image/header/bg6.png)",
-      "url(../image/header/bg7.png)",
-      "url(../image/header/bg8.png)",
-      "url(../image/header/bg9.png)",
-    ];
+    for (i = 0; i < backgrounds.length - 1; i++) {
+      const bgEl = document.createElement("div");
+      bgEl.classList.add("bg-" + i);
+      bgEl.style.backgroundImage = backgrounds[i];
+      bgEl.style.backgroundSize = "cover";
+      bgEl.style.display = "none";
+      headerContentBg.append(bgEl);
+    }
+  }
 
-    const animationFn = setInterval(function () {
+  animateBackground();
+
+  function animateBackgroundFn() {
+    let animationIndex = 0;
+    const loadFn = setInterval(function () {
       if (animationIndex < backgrounds.length - 1) {
+        const bgElememts = document.querySelector(".bg-" + animationIndex);
+        console.log(bgElememts);
+        bgElememts.style.display = "block";
         animationIndex++;
-        headerContent.style.backgroundImage = backgrounds[animationIndex];
-        headerContent.style.backgroundSize = "cover";
+
         if (animationIndex == backgrounds.length - 1) {
-          headerContentH1.style.opacity = 1;
-          headerContentSpan.style.opacity = 1;
+          headerContentH1.style.display = "block";
+          headerContentSpan.style.display = "block";
         }
       } else {
         return false;
       }
     }, 200);
   }
-  window.addEventListener("load", animateBackground());
 
+  window.addEventListener("load", animateBackgroundFn());
   //best 효과 함수문
   const bestSkils = document.querySelectorAll(".best");
 
