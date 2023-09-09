@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //배경색 바뀌는 함수문
   let bgcolorNum = 0;
   function bgColorFn(selector) {
-    const bgColorList = ["#80ffdb", "#6930c3", "#ffffff", "#f58634"];
+    const bgColorList = ["#80ffdb", "#6930c3", "#f58634", "#ffffff"];
     const headerbgColor = document.querySelector("header");
 
     if (bgcolorNum < bgColorList.length) {
