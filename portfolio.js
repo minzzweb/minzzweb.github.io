@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const el = document.querySelector(selector);
     const liEls = el.querySelectorAll("ul li");
     const tabContent = el.querySelector(".tab-content");
-    const firstTabliEl = liEls.item(0).firstElementChild;
+    const firstTabliEl = liEls.item(1).firstElementChild;
 
     //탭 활성화 함수문
 
